@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_stat_name"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="end"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PotLog"
+        android:layout_marginTop="70dp"
+        android:layout_weight="0.15"
+        android:textAlignment="center"
+        android:padding="40dp"
+        android:textSize="50dp"
+        android:textColor="#000000"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vehicle"
+        android:focusedByDefault="false"
+        android:paddingLeft="30dp"
+        android:paddingRight="50dp"
+        />
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="0"
+        android:padding="20dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/start"
+            android:layout_width="match_parent"
+            android:layout_weight="45"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:textOn="Stop"
+            android:textOff="Start"
+            android:backgroundTint="@color/white"
+            />
+
+        <Button
+            android:id="@+id/record"
+            android:layout_weight="45"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Download"
+            android:enabled="false"
+            android:backgroundTint="@color/teal_200"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+        <ToggleButton
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:textOn="Other"
+            android:textOff="Pothole"
+            android:layout_weight="0"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/white"
+            />
+    <Button
+        android:id="@+id/fire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pothole"
+        android:enabled="false"
+        android:layout_weight="0"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="8dp"
+            android:textColor="@color/black"
+            android:background="@color/cardview_light_background"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content"
+             />
+
+        <ListView
+            android:id="@+id/reading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PotLog:Tap to Map Potholes!"
+        android:textAlignment="center"
+        android:padding="4dp"
+        android:textSize="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#808080"
+        />
+
+</LinearLayout>
